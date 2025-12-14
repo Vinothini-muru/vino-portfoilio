@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio - Single Page (Responsive)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="mobile-top">
+    <div style="display:flex;align-items:center;gap:12px">
+      <button id="openSidebar" class="mobile-toggle">☰ Portfolio</button>
+      <div style="font-weight:700">Vinothini M</div>
+    </div>
+    <div style="display:flex;gap:8px;align-items:center">
+      <button id="themeToggle" class="mobile-toggle" title="Toggle theme">🌓</button>
+      <a class="resume-btn" href="#" onclick="alert('Replace with your resume link');return false;">Resume</a>
+    </div>
+  </div>
+
+  <div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <div class="profile">
+        <img class="avatar" src="../doc/photo/vinothini image.jpeg" alt="Vinothini M">
+        <!-- <div class="avatar" aria-hidden="true"></div> -->
+        <div>
+          <h2>Vinothini M</h2>
+          <p>Frontend Developer</p>
+          <a class="resume-btn" href="../doc/photo/Vinothini Resume.pdf" download>Resume</a>
+          <!-- <a class="resume-btn" href="C:/Users/Admin/Desktop/Vinothini portfolio/photo/Vinothini Resume.pdf" onclick="alert('Replace with resume');return false;">Resume</a> -->
+            <!-- <a class="resume-btn" href="doc/photo/Vinothini Resume.pdf" download>Resume</a> -->
+        </div>
+      </div>
+
+      <div class="icon-bar" aria-hidden="true">
+        <a  class="icon" href="mailto:jayavinothini369@gmail.com" target="_blank" title="Email">@</a>
+
+        <!-- <a class="icon" href="jayavinothini369@gmail.com" target="_blank">@</a> -->
+        <a class="icon" href="https://www.linkedin.com/in/vinothini-m-259b90325" target="_blank" title="LinkedIn">ln</a>
+        <a class="icon" href="https://www.skillrack.com/faces/resume.xhtml?id=493645&key=5e3b0b67d4cab4c4ccb22ba1305761a885127f0a" target="_blank" title="SkillRack">{}</a>
+        <a class="icon" href = "https://leetcode.com/profile/" title="Leedcode"><></a>
+        <a class="icon" href = "https://github.com/Vinothini-muru" title="Github">🐙
+</a>
+
+      </div>
+
+      <div class="side-section">
+        <div class="section-title">Technologies</div>
+
+        <div style="margin-top:8px">
+          <div class="section-title" style="font-size:13px">Frontend</div>
+          <div class="tags" style="margin-bottom:10px">
+            <div class="tag">HTML</div>
+            <div class="tag">CSS</div>
+            <div class="tag">JavaScript</div>
+          </div>
+
+          <div class="section-title" style="font-size:13px">Backend</div>
+          <div class="tags" style="margin-bottom:10px">
+            <div class="tag">Node.js</div>
+            <div class="tag">Python</div>
+          </div>
+
+          <div class="section-title" style="font-size:13px">Database</div>
+          <div class="tags" style="margin-bottom:10px">
+            <div class="tag">MongoDB</div>
+            <div class="tag">MySQL</div>
+          </div>
+
+          <div class="section-title" style="font-size:13px">Tools</div>
+          <div class="tags">
+            <div class="tag">Git</div>
+            <div class="tag">Flask</div>
+            <div class="tag">VScode</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="side-section" style="margin-top:22px">
+        <div class="section-title">Contact</div>
+        <div style="color:var(--muted);font-size:14px"><a>jayavinothini369@gmail.com</a></div>
+        <div style="color:var(--muted);font-size:14px;margin-top:6px">Chennai, India</div>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+      <div class="top-row">
+        <div style="display:flex; gap:12px; align-items:center">
+          <!-- <h1 style="margin:0;font-size:22px">Education</h1> -->
+          <div style="color:var(--muted);font-size:13px">• Selected works & case studies</div>
+        </div>
+
+        <div style="display:flex;gap:10px;align-items:center">
+          <button id="themeToggleTop" class="btn ghost" title="Toggle theme">🌓 Theme</button>
+        </div>
+      </div>
+
+ <section style="margin-top:26px">
+        <h2 style="margin:0 0 12px">Education
+          </h2>
+
+
+
+        <div class="achievements-grid">
+
+          <div class="card">
+            <h3>St.joseph's Institute Of Technology      2024-2028</h3>
+            <h4>B.E CSE</h4>
+            <div style="display:flex;gap:10px;margin-top:8px">
+            </div>
+          </div>
+          <div class="card"> <!-- add missing ">" here -->
+             <h3>Zion Matriculation Higher Secondary School-SBM</h3>
+              <h4>2014-2024</h4>
+               </div>
+
+
+
+        </div>
+      </section>      
+      <h2 style="margin:0 0 26x">Certifications </h2>
+      <section class="projects-grid" id="projectsGrid">
+
+        <!-- card (sample) -->
+        <article class="card">
+          <h3>Python for Data science , Stress Management- NPTEL</h3>
+          <div class="meta">Mar 2025 </div>
+          <!-- <div class="badges" style="margin-bottom:12px">
+            <span class="badge">TypeScript</span>
+            <span class="badge">React</span>
+            <span class="badge">Vite</span>
+            <span class="badge">Tailwind</span>
+          </div> -->
+
+          <!-- <p style="color:var(--muted);font-size:14px;margin:0">A lightweight spaced repetition platform built to help learners retain knowledge using SRS algorithms and progress tracking.</p>
+
+          <div class="card-footer">
+            <div style="display:flex;gap:8px">
+              <button class="btn">Know More ↗</button>
+              <button class="btn">View Live ↗</button>
+            </div>
+            <div style="color:var(--muted);font-size:13px">• Nov 2025</div>
+          </div> -->
+          <!-- <button>know more</button> -->
+           <button onclick="location.href='certificate/NPTEL DATA SCIENCE.jpeg'">Know More ↗</button>
+
+        </article>
+        <!-- card (sample) -->
+        <article class="card">
+          <h3>Mobile App Development Using Flutter , Introduction to AI- Infosys Spring board</h3>
+          <div class="meta">Sept 2025 </div>
+          <!-- <div class="badges" style="margin-bottom:12px">
+            <span class="badge">TypeScript</span>
+            <span class="badge">React</span>
+            <span class="badge">Vite</span>
+            <span class="badge">Tailwind</span>
+          </div> -->
+
+          <!-- <p style="color:var(--muted);font-size:14px;margin:0">A lightweight spaced repetition platform built to help learners retain knowledge using SRS algorithms and progress tracking.</p>
+
+          <div class="card-footer">
+            <div style="display:flex;gap:8px">
+              <button class="btn">Know More ↗</button>
+
+              <button class="btn">View Live ↗</button>
+            </div>
+            <div style="color:var(--muted);font-size:13px">• Nov 2025</div>
+          </div> -->
+          <!-- <button>know more</button> -->
+          <button onclick="location.href='photo/vinothini image.jpeg'">Know More ↗</button>
+        </article>
+
+        <!-- <article class="card">
+          <h3>C Programming - Udemy</h3>
+          <div class="meta">Dec 2024</div> -->
+        <!-- <div class="badges" style="margin-bottom:12px">
+            <span class="badge">React</span>
+            <span class="badge">Node.js</span>
+            <span class="badge">Express</span>
+            <span class="badge">AWS</span>
+          </div>
+          <p style="color:var(--muted);font-size:14px;margin:0">Track coding problems, progress, and solutions with tags and difficulty filters.</p>
+
+          <div class="card-footer">
+            <div style="display:flex;gap:8px">
+              <button class="btn">Know More ↗</button>
+              <button class="btn">View Live ↗</button>
+            </div>
+            <div style="color:var(--muted);font-size:13px">• Sep 2025</div>
+          </div> -->
+          
+        <!-- </article> -->
+
+        <!-- Add remaining projects here -->
+
+        <div id="moreProjects" style="display:none; grid-column: 1 / -1">
+          <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:18px">
+            <article class="card">
+              <h3>Linux Unhatched, Networking Basic - Cisco Networking Academy Program</h3>
+              <div class="meta">Aug 2025</div>
+              <!-- <div class="badges" style="margin-bottom:12px"><span class="badge">Socket.io</span><span class="badge">React</span></div>
+              <p style="color:var(--muted);font-size:14px;margin:0">Realtime chat, notifications and post feed.</p>
+              <div class="card-footer">
+                <div style="display:flex;gap:8px"><button class="btn">Know More ↗</button></div>
+                <div style="color:var(--muted);font-size:13px">• Apr 2025</div>
+              </div> -->
+              <!-- <button>know more</button> -->
+          <button onclick="location.href='photo/vinothini image.jpeg'">Know More ↗</button>
+            </article>
+
+            <article class="card">
+              <h3>AWS Academy Cloud Foundations , Generative AI Foundations — AWS Academy</h3>
+              <div class="meta">sep 2025</div>
+              <!-- <div class="badges" style="margin-bottom:12px"><span class="badge">Node</span><span class="badge">MongoDB</span></div>
+              <p style="color:var(--muted);font-size:14px;margin:0">Dashboard for sensor data collection and visualization with alerts.</p>
+              <div class="card-footer">
+                <div style="display:flex;gap:8px"><button class="btn">Know More ↗</button></div>
+                <div style="color:var(--muted);font-size:13px">• Mar 2025</div>
+              </div> -->
+              <!-- <button>know more</button> -->
+          <button onclick="location.href='certificate/AWS AIS'">Know More ↗</button>
+            </article>
+          </div>
+        </div>
+
+      </section>
+
+      <div class="showmore-wrap">
+        <button id="showMoreBtn" class="pill">Show More (2)</button>
+      </div>
+      <!-- Achievements -->
+      <section style="margin-top:26px">
+        <h2 style="margin:0 0 12px">Experience(Intern)</h2>
+
+
+
+        <div class="achievements-grid">
+
+          <div class="card">
+            <h3>Bigsibucks Innovation Pvt Ltd</h3>
+            <h4>Projects</h4>
+            <div class="meta">Predicting Air and Water Quality
+              [9th June -28th june 2025</div>
+            <div style="display:flex;gap:10px;margin-top:8px">
+              <!-- <button>know more</button> -->
+          <button onclick="location.href='intern/DATA SCIENCE.jpeg'">Know More ↗</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Bigsibucks Innovation Pvt Ltd</h3>
+            <h4>Projects</h4>
+            <div class="meta">Predicting Air and Water Quality
+              [2 Dec -30 Dec 2025</div>
+            <div style="display:flex;gap:10px;margin-top:8px">
+              <!-- <button>know more</button> -->
+          <button onclick="location.href='photo/vinothini image.jpeg'">Know More ↗</button>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+      <section style="margin-top:26px">
+        <h2 style="margin:0 0 12px">Achievements 🏆</h2>
+
+        <div class="achievements-grid">
+          <div class="card">
+            <h3> SPARKATHON 1.0 [SJIT]</h3>
+            <div class="meta"> Second Place • Feb 2025</div>
+            <div style="display:flex;gap:10px;margin-top:8px">
+              <div class="badge">Second Place</div>
+              <div class="badge">₹2000</div>
+              <!-- <button>know more</button> -->
+          <button onclick="location.href='achievement-sparkathon.html'">Know More ↗</button>
+
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>URBANTHINK 2025 [SEC]</h3>
+            <div class="meta">Second Place • Aug 2025</div>
+            <div style="display:flex;gap:10px;margin-top:8px">
+              <div class="badge">Second Place</div>
+              <div class="badge">₹6000</div>
+              <!-- <button>know more</button> -->
+          <button onclick="location.href='achievement-urbanthink.html'">Know More↗</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <section style="margin-top:26px">
+        <h2 style="margin:0 0 12px">Projects</h2>
+
+
+
+        <section style="margin-top:26px">
+  
+
+  <div class="projects">
+    <!-- Smart e-waste bin -->
+    <div class="card">
+      <h3>Smart e‑waste bin</h3>
+      <div class="meta">
+        A bin enabled IoT sensors to control e‑waste &amp; to avoid overflow
+      </div>
+
+      <div style="display:flex;gap:10px;margin-top:8px">
+        <button class="know-btn" data-target="#ewasteMore">Know More</button>
+      </div>
+
+      <p id="ewasteMore" class="moreText">
+        ★ Uses IoT sensors to continuously monitor e‑waste bin fill level and prevent overflow.<br>
+        ★ Sends alerts when the bin is nearly full so collection happens at the right time.<br>
+        ★ Reduces manual checking, keeps surroundings clean, and supports proper e‑waste recycling.
+      </p>
+    </div>
+
+    <!-- Underground water leakage detection -->
+    <div class="card">
+      <h3>Underground water leakage detection</h3>
+      <div class="meta">
+        Smart IoT‑based water leakage detection and monitoring system.
+      </div>
+
+      <div style="display:flex;gap:10px;margin-top:8px">
+        <button class="know-btn" data-target="#leakMore">Know More</button>
+      </div>
+
+      <p id="leakMore" class="moreText">
+        ★ Uses underground IoT sensors to monitor water flow and pressure in pipelines.<br>
+        ★ Detects hidden leaks from abnormal readings and sends instant alerts to users.<br>
+        ★ Helps reduce water loss, repair damage early, and improve smart water management.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

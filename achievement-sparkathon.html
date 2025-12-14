@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SPARKATHON 1.0 – Details</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="achievement.css">
+</head>
+<body>
+  <!-- Top bar with Home + Theme -->
+  <header class="detail-topbar">
+    <button class="btn ghost" onclick="location.href='index.html'">← Home</button>
+    <div style="flex:1"></div>
+    <button id="detailThemeToggle" class="btn ghost">🌓 Theme</button>
+  </header>
+
+  <main class="achievement-page">
+    <div class="achievement-photo-wrap">
+      <img src="images/sparkathon.jpg" alt="SPARKATHON 1.0 photo" class="achievement-photo">
+    </div>
+
+    <section class="achievement-section">
+      <h2>About Event</h2>
+      <ul>
+        <li>★Participated in SPARKATHON 1.0 hackathon at SJIT.</li>
+        <li>★Secured 2nd place with an innovative solution.</li>
+      </ul>
+    </section>
+
+    <section class="achievement-section">
+      <h2>Achievement Details</h2>
+      <div class="achievement-detail-grid">
+        <div class="detail-card">
+          <p class="detail-label">Date of Achievement</p>
+          <p class="detail-value">February 2025</p>
+        </div>
+        <div class="detail-card">
+          <p class="detail-label">Position Achieved</p>
+          <p class="detail-value highlight">Second Place</p>
+        </div>
+      </div>
+      <div class="detail-card full-width">
+        <p class="detail-label">Prize Amount</p>
+        <p class="detail-value">₹ 2000</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- same script.js used in index.html -->
+  <script src="script.js"></script>
+</body>
+</html>
